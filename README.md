@@ -9,7 +9,7 @@ Based on the following module:
 ## USE
 Add a file, keypair.tf with the following:
 ```
-resource "aws_key_pair" "something" {
+resource "aws_key_pair" "keypair" {
   key_name   = "something-something"
   public_key = "ssh-rsa AAABBBCCC your_key"
 }

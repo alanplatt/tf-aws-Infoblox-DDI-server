@@ -43,7 +43,7 @@ resource "aws_eip" "nat" {
 module "infoblox" {
   source      = "./modules/infoblox-tf-template"
   aws_region  = "eu-west-1"
-  key_pair    = aws_key_pair.apsystems.id
+  key_pair    = aws_key_pair.keypair.id
   name_prefix = terraform.workspace
 
   vpc_id         = aws_vpc.infoblox.id
